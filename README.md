@@ -1,1 +1,3 @@
-# SDEV245-RBAC_demo
+The CIA triad describes three core principles of secure data and system protection: Confidentiality, Integrity, and Availabilty. Confidentiality ensures that information is only accessible to authorized individuals. Users must prove their identity before being able to access protected data or execute protected actions. Role-based access control is a system that restricts certain functions to specific roles, so the admin_panel is only available to the admin role and not to regular users.
+
+For the app logic, a hard-coded dictionary maps usernames to roles. 'authenticate()' verifies the entered username exists. After login, the role is retrieved and used to decide which functions the user can call. Admin can run both 'admin_panel()' and 'user_dashmoard()', while the user role can only access the latter and recieves a denial message when accessing the admin dashboard.
